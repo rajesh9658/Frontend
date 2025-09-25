@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-import type {FormEvent, ChangeEvent } from "react";
+import type { ChangeEvent } from "react";
 import stars from "../../assets/spark.svg";
 import eyeIcon from "../../assets/eye.svg";
 import io from "socket.io-client";

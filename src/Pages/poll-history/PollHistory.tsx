@@ -25,7 +25,7 @@ const apiUrl =
     ? import.meta.env.VITE_API_BASE_URL
     : "http://localhost:3000";
 
-const socket = io(apiUrl);
+// const socket = io(apiUrl);
 
 const PollHistoryPage: React.FC = () => {
   const [polls, setPolls] = useState<Poll[]>([]);

@@ -71,41 +71,41 @@ const ChatPopover: React.FC = () => {
     socket.emit("kickOut", participant);
   };
 
-  const ParticipantsTab: React.FC = () => (
-    <div className="max-h-72 overflow-y-auto">
-      {participants.length === 0 ? (
-        <div className="text-gray-500 text-center py-4">No participants connected</div>
-      ) : (
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead className="bg-gray-100">
-              <tr>
-                <th className="px-4 py-2 text-left font-medium">Name</th>
-                {username?.startsWith("teacher") && <th className="px-4 py-2 text-left font-medium">Actions</th>}
-              </tr>
-            </thead>
-            <tbody>
-              {participants.map((participant, index) => (
-                <tr key={index} className="border-b border-gray-200 hover:bg-gray-50">
-                  <td className="px-4 py-2">{participant}</td>
-                  {username?.startsWith("teacher") && (
-                    <td className="px-4 py-2">
-                      <button
-                        onClick={() => handleKickOut(participant)}
-                        className="text-red-600 hover:text-red-800 text-xs font-medium transition-colors"
-                      >
-                        Kick Out
-                      </button>
-                    </td>
-                  )}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
-    </div>
-  );
+  // const ParticipantsTab: React.FC = () => (
+  //   <div className="max-h-72 overflow-y-auto">
+  //     {participants.length === 0 ? (
+  //       <div className="text-gray-500 text-center py-4">No participants connected</div>
+  //     ) : (
+  //       <div className="overflow-x-auto">
+  //         <table className="w-full text-sm">
+  //           <thead className="bg-gray-100">
+  //             <tr>
+  //               <th className="px-4 py-2 text-left font-medium">Name</th>
+  //               {username?.startsWith("teacher") && <th className="px-4 py-2 text-left font-medium">Actions</th>}
+  //             </tr>
+  //           </thead>
+  //           <tbody>
+  //             {participants.map((participant, index) => (
+  //               <tr key={index} className="border-b border-gray-200 hover:bg-gray-50">
+  //                 <td className="px-4 py-2">{participant}</td>
+  //                 {username?.startsWith("teacher") && (
+  //                   <td className="px-4 py-2">
+  //                     <button
+  //                       onClick={() => handleKickOut(participant)}
+  //                       className="text-red-600 hover:text-red-800 text-xs font-medium transition-colors"
+  //                     >
+  //                       Kick Out
+  //                     </button>
+  //                   </td>
+  //                 )}
+  //               </tr>
+  //             ))}
+  //           </tbody>
+  //         </table>
+  //       </div>
+  //     )}
+  //   </div>
+  // );
 
   const ChatTab: React.FC = () => (
     <div className="flex flex-col h-72">
