@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+
+@layer components {
+  .progress-bar-bg {
+    @apply bg-[#7565d9];
+  }
+  
+  .option-border {
+    @apply border border-[#7565d9];
+  }
+  
+  .question {
+    @apply bg-gradient-to-r from-[#343434] to-[#6E6E6E] text-white;
+  }
+  
+  .landing-title {
+    @apply text-2xl font-bold;
+  }
+  
+  .landing-description {
+    @apply mb-8 text-gray-600;
+  }
+  
+  .spinner {
+    @apply text-[#500ECE];
+  }
+}
