@@ -67,9 +67,9 @@ const ChatPopover: React.FC = () => {
     }
   };
 
-  const handleKickOut = (participant: string) => {
-    socket.emit("kickOut", participant);
-  };
+  // const handleKickOut = (participant: string) => {
+  //   socket.emit("kickOut", participant);
+  // };
 
   // const ParticipantsTab: React.FC = () => (
   //   <div className="max-h-72 overflow-y-auto">

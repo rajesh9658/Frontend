@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import io from "socket.io-client";
+
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import backIcon from "../../assets/back.svg";
